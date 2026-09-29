@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biodata Mahasiswa</title>
+</head>
+<body>
+<header><h1>Biodata Mahasiswa</h1></header>
+<nav>
+ <a href="index.html">Beranda</a> |
+ <a href="#biodata">Biodata</a> |
+ <a href="#form">Form</a> |
+ <a href="#media">Multimedia</a>
+</nav>
+<main>
+<section id="biodata">
+ <h2>Data Mahasiswa</h2>
+ <table border="1">
+ <caption>Biodata Mahasiswa</caption>
+ <thead>
+ <tr><th>Data</th><th>Keterangan</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>NIM</td><td>312510039</td></tr>
+ <tr><td>Nama</td><td>Erlina Dwi Artika</td></tr>
+ <tr><td>Kelas</td><td>I252A</td></tr>
+ <tr><td>Program Studi</td><td>Teknik Informatika</td></tr>
+ <tr><td>Mata Kuliah</td><td>Pemrograman Web</td></tr>
+ </tbody>
+ </table>
+</section>
+
+<section id="form">
+ <h2>Form Biodata</h2>
+ <form>
+ <label for="nama">Nama</label><br>
+ <input type="text" id="nama" name="nama" required minlength="3">
+ <br><br>
+ <label for="email">Email</label><br>
+ <input type="email" id="email" name="email" required>
+ <br><br>
+ <label for="tanggal">Tanggal Lahir</label><br>
+ <input type="date" id="tanggal" name="tanggal" required>
+ <br><br>
+ Jenis Kelamin<br>
+ <input type="radio" id="laki" name="jk" value="L" required>
+ <label for="laki">Laki-laki</label>
+ <input type="radio" id="perempuan" name="jk" value="P">
+ <label for="perempuan">Perempuan</label>
+ <br><br>
+ <label for="prodi">Program Studi</label><br>
+ <select id="prodi" name="prodi" required>
+ <option value="">-- Pilih --</option>
+ <option value="ti">Teknik Informatika</option>
+ <option value="si">Sistem Informasi</option>
+ </select>
+ <br><br>
+ Keahlian<br>
+ <input type="checkbox" id="html" name="skill" value="HTML">
+ <label for="html">HTML</label>
+ <input type="checkbox" id="css" name="skill" value="CSS">
+ <label for="css">CSS</label>
+ <input type="checkbox" id="js" name="skill" value="JavaScript">
+ <label for="js">JavaScript</label>
+ <br><br>
+ <label for="alamat">Alamat</label><br>
+ <textarea id="alamat" name="alamat" rows="4" cols="40" required></textarea>
+ <br><br>
+ <button type="submit">Simpan</button>
+ <button type="reset">Reset</button>
+ </form>
+</section>
+
+<section id="media">
+ <h2>Video Perkenalan</h2>
+ <video controls width="480">
+ <source src="media/video.mp4" type="video/mp4">
+ Browser tidak mendukung video.
+ </video>
+</section>
+<aside>Halaman ini adalah proyek mini Praktikum 2.</aside>
+</main>
+<footer><p>&copy; 2026 Teknik Informatika</p></footer>
+</body>
+</html>

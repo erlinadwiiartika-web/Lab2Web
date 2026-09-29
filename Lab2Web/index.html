@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praktikum 2 - HTML Lanjutan</title>
+</head>
+<body>
+<header>
+ <h1>Praktikum 2: HTML Lanjutan</h1>
+ <p>Erlina Dwi Artika | NIM 312510039 | Kelas I252A | Pemrograman Web</p>
+</header>
+<nav>
+ <a href="index.html">Beranda</a> |
+ <a href="#latihan-1">Latihan 1</a> |
+ <a href="#latihan-2">Latihan 2</a> |
+ <a href="#latihan-3">Latihan 3</a> |
+ <a href="#latihan-4">Latihan 4</a> |
+ <a href="#latihan-5">Latihan 5</a> |
+ <a href="#latihan-6">Latihan 6</a> |
+ <a href="#latihan-8">Latihan 8</a> |
+ <a href="biodata.html">Proyek Mini: Biodata</a>
+</nav>
+<main>
+<section id="informasi">
+ <h2>Informasi Akademik</h2>
+ <article>
+ <h3>Praktikum HTML Lanjutan</h3>
+ <p>Mahasiswa mempelajari tabel, form, semantic HTML,
+ multimedia, dan validasi.</p>
+ </article>
+</section>
+
+<section id="latihan-1">
+<h2>Latihan 1: Tabel Data Mahasiswa</h2>
+<table border="1">
+ <tr><th>NIM</th><th>Nama</th><th>Program Studi</th></tr>
+ <tr><td>31241001</td><td>Andi</td><td>Teknik Informatika</td></tr>
+ <tr><td>31241002</td><td>Budi</td><td>Teknik Informatika</td></tr>
+ <tr><td>31241003</td><td>Citra</td><td>Teknik Informatika</td></tr>
+ <tr><td>312510039</td><td>Erlina Dwi Artika</td><td>Teknik Informatika</td></tr>
+</table>
+</section>
+
+<section id="latihan-2">
+<h2>Latihan 2: Tabel dengan thead, tbody, dan tfoot</h2>
+<table border="1">
+ <caption>Nilai Praktikum</caption>
+ <thead><tr><th>No</th><th>Nama</th><th>Nilai</th></tr></thead>
+ <tbody>
+ <tr><td>1</td><td>Andi</td><td>85</td></tr>
+ <tr><td>2</td><td>Budi</td><td>90</td></tr>
+ <tr><td>3</td><td>Erlina Dwi Artika</td><td>95</td></tr>
+ </tbody>
+ <tfoot><tr><td colspan="2">Rata-rata</td><td>90</td></tr></tfoot>
+</table>
+</section>
+
+<section id="latihan-3">
+<h2>Latihan 3: Form Registrasi Mahasiswa</h2>
+<form>
+ <label for="reg-nama">Nama Lengkap</label><br>
+ <input type="text" id="reg-nama" name="nama"><br><br>
+ <label for="reg-email">Email</label><br>
+ <input type="email" id="reg-email" name="email"><br><br>
+ <label for="reg-password">Password</label><br>
+ <input type="password" id="reg-password" name="password"><br><br>
+ <label for="reg-tanggal">Tanggal Lahir</label><br>
+ <input type="date" id="reg-tanggal" name="tanggal"><br><br>
+ <button type="submit">Daftar</button>
+ <button type="reset">Reset</button>
+</form>
+</section>
+
+<section id="latihan-4">
+<h2>Latihan 4: Radio Button dan Checkbox</h2>
+<form>
+ <h3>Jenis Kelamin</h3>
+ <input type="radio" id="laki" name="jk" value="L">
+ <label for="laki">Laki-laki</label>
+ <input type="radio" id="perempuan" name="jk" value="P" checked>
+ <label for="perempuan">Perempuan</label>
+ <h3>Keahlian</h3>
+ <input type="checkbox" id="html" name="skill" value="HTML" checked>
+ <label for="html">HTML</label>
+ <input type="checkbox" id="css" name="skill" value="CSS">
+ <label for="css">CSS</label>
+ <input type="checkbox" id="js" name="skill" value="JavaScript" checked>
+ <label for="js">JavaScript</label>
+</form>
+</section>
+
+<section id="latihan-5">
+<h2>Latihan 5: Select dan Textarea</h2>
+<form>
+ <label for="prodi">Program Studi</label>
+ <select id="prodi" name="prodi">
+ <option value="">-- Pilih Prodi --</option>
+ <option value="ti" selected>Teknik Informatika</option>
+ <option value="si">Sistem Informasi</option>
+ </select>
+ <br><br>
+ <label for="alamat">Alamat</label><br>
+ <textarea id="alamat" name="alamat" rows="5" cols="40">Cikarang, Kabupaten Bekasi, Jawa Barat</textarea>
+</form>
+</section>
+
+<section id="latihan-6">
+<h2>Latihan 6: Validasi Form Dasar</h2>
+<form id="form-validasi">
+ <label for="val-nama">Nama</label>
+ <input type="text" id="val-nama" name="nama" required minlength="3">
+ <br><br>
+ <label for="val-email">Email</label>
+ <input type="email" id="val-email" name="email" required>
+ <br><br>
+ <label for="val-umur">Umur</label>
+ <input type="number" id="val-umur" name="umur" min="17" max="60" required>
+ <br><br>
+ <button type="submit">Kirim</button>
+</form>
+</section>
+
+<section id="latihan-8">
+<h2>Latihan 8: Multimedia</h2>
+<h3>Audio</h3>
+<audio controls>
+ <source src="media/audio.mp3" type="audio/mpeg">
+ Browser tidak mendukung audio.
+</audio>
+<h3>Video</h3>
+<video controls width="480">
+ <source src="media/video.mp4" type="video/mp4">
+ Browser tidak mendukung video.
+</video>
+</section>
+
+<aside>Informasi tambahan mahasiswa.</aside>
+</main>
+<footer><p>&copy; 2026 Teknik Informatika</p></footer>
+</body>
+</html>
